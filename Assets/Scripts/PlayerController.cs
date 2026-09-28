@@ -19,4 +19,12 @@ public class PlayerController : MonoBehaviour
 
         playerRb.AddForce(movement * playerSpeed); //adiciona força no rigidbody da bola multiplicado com a velocidade dela
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("PickUp"))
+        {
+            other.gameObject.SetActive(false);
+        }
+    }
 }
