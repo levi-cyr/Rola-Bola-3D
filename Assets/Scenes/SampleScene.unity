@@ -1040,7 +1040,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6265799161447918500, guid: 0df21f0efb4c8204785de48e6834c7da, type: 3}
       propertyPath: m_Name
-      value: Pig - Pickup (2)
+      value: Pig - PickUp (2)
       objectReference: {fileID: 0}
     - target: {fileID: 6755196647174271262, guid: 0df21f0efb4c8204785de48e6834c7da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1253,7 +1253,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6265799161447918500, guid: 0df21f0efb4c8204785de48e6834c7da, type: 3}
       propertyPath: m_Name
-      value: Pig - Pickup (4)
+      value: Pig - PickUp (4)
       objectReference: {fileID: 0}
     - target: {fileID: 6755196647174271262, guid: 0df21f0efb4c8204785de48e6834c7da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2314,7 +2314,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6265799161447918500, guid: 0df21f0efb4c8204785de48e6834c7da, type: 3}
       propertyPath: m_Name
-      value: Pig - Pickup (3)
+      value: Pig - PickUp (3)
       objectReference: {fileID: 0}
     - target: {fileID: 6755196647174271262, guid: 0df21f0efb4c8204785de48e6834c7da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2490,7 +2490,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6265799161447918500, guid: 0df21f0efb4c8204785de48e6834c7da, type: 3}
       propertyPath: m_Name
-      value: Pig - Pickup (5)
+      value: Pig - PickUp (5)
       objectReference: {fileID: 0}
     - target: {fileID: 6755196647174271262, guid: 0df21f0efb4c8204785de48e6834c7da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2769,7 +2769,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6265799161447918500, guid: 0df21f0efb4c8204785de48e6834c7da, type: 3}
       propertyPath: m_Name
-      value: Pig - Pickup (6)
+      value: Pig - PickUp (6)
       objectReference: {fileID: 0}
     - target: {fileID: 6755196647174271262, guid: 0df21f0efb4c8204785de48e6834c7da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3485,7 +3485,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6265799161447918500, guid: 0df21f0efb4c8204785de48e6834c7da, type: 3}
       propertyPath: m_Name
-      value: Pig - Pickup (1)
+      value: Pig - PickUp (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6755196647174271262, guid: 0df21f0efb4c8204785de48e6834c7da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3547,7 +3547,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6265799161447918500, guid: 0df21f0efb4c8204785de48e6834c7da, type: 3}
       propertyPath: m_Name
-      value: Pig - Pickup
+      value: Pig - PickUp
       objectReference: {fileID: 0}
     - target: {fileID: 6755196647174271262, guid: 0df21f0efb4c8204785de48e6834c7da, type: 3}
       propertyPath: m_LocalPosition.x

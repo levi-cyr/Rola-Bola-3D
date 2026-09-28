@@ -578,7 +578,7 @@ GameObject:
   - component: {fileID: 819491699478145892}
   - component: {fileID: 4589217043482433751}
   m_Layer: 0
-  m_Name: Pig - Pickup
+  m_Name: Pig - PickUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
