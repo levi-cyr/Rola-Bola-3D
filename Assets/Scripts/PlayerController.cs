@@ -1,13 +1,21 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRb; //rigidbody da bola
+    private int count; //contagem dos porcos coletados
+    public TextMeshProUGUI countText;
+    public GameObject winTextObject; //texto de vitoria
 
     [Header("Player Settings")] //header para as configurações da bola
     public float playerSpeed = 3f; //controla a velocidade da bola
     void Start()
     {
+        count = 0; //guilherme
         playerRb = GetComponent<Rigidbody>();
     }
 
@@ -18,6 +26,8 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = new Vector3(horizontalMovement, 0f, verticalMovement); //cria um vetor de movimento onde o X e Y são o movimento horizontal e vertical respectivamente.
 
         playerRb.AddForce(movement * playerSpeed); //adiciona força no rigidbody da bola multiplicado com a velocidade dela
+
+        SetCountText(); //
     }
 
     void OnTriggerEnter(Collider other)
@@ -25,6 +35,15 @@ public class PlayerController : MonoBehaviour
         if (other.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
+            count = count + 1;
         }
+    }
+
+    //Implementação de pontuação - Guilherme
+    void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();
+        if (count >= 6) //se a contagem de pontos for maior ou igual a 6, ele ativa o texto de vitoria
+            winTextObject.SetActive(true);
     }
 }
