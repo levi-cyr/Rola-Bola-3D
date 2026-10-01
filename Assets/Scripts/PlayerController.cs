@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     //Implementação de pontuação - Guilherme
     void SetCountText()
     {
-        countText.text = "Count: " + count.ToString();
+        countText.text = "Carnes: " + count.ToString();
         if (count >= 6) //se a contagem de pontos for maior ou igual a 6, ele ativa o texto de vitoria
             winTextObject.SetActive(true);
     }
