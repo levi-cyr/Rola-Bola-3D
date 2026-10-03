@@ -67,6 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Rola Bola 3D.slnx",
+    "dotnet.defaultSolution": "Rola Bola 3D - Minecraft.slnx",
     "dotnet.enableWorkspaceBasedDevelopment": false
 }

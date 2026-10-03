@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: c35ac796aecbd8948a8cf34f10d1accf
+  productGUID: d559a47e912935149a721e2e91137bcf
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -143,8 +143,7 @@ PlayerSettings:
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
   bundleVersion: 0.1.0
-  preloadedAssets:
-  - {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -920,12 +919,12 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 2
+  activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: aeb3cb44-ad91-44ba-a467-75f2e8f3d79d
+  cloudProjectId: 2d963c66-4792-4ba5-9057-12724a09d943
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Rola Bola 3D 2026-09-27_17-42-34
+  projectName: Rola Bola 3D 2026-10-03_18-09-20
   organizationId: levicy
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
