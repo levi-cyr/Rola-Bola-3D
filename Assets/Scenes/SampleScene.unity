@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0f6da06a7e547ee48acd9739445f0ae7, type: 2}
+  m_sharedMaterial: {fileID: 4374501132205716080, guid: 0f6da06a7e547ee48acd9739445f0ae7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -416,7 +416,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2d367f3c62f9e478f30671bb50f4ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerScript: {fileID: 759013169}
+  playerObject: {fileID: 759013169}
+  winScreen: {fileID: 1791195177}
+  playerController: {fileID: 1568239779}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,6 +751,135 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2942357903177264949, guid: 8155968bf02ae144fa2b9676d2b97f36, type: 3}
   m_PrefabInstance: {fileID: 1649674678}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &702011607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 702011609}
+  - component: {fileID: 702011608}
+  m_Layer: 0
+  m_Name: Venceu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &702011608
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702011607}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 3c78cc4beb874204c86e7734b3ec0de8, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &702011609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702011607}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.67, z: 0.8}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &759013169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,7 +1274,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: VOCE VENCEU
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0f6da06a7e547ee48acd9739445f0ae7, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1210,7 +1341,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1184095856
@@ -1442,7 +1573,7 @@ GameObject:
   - component: {fileID: 1487084735}
   - component: {fileID: 1487084734}
   m_Layer: 0
-  m_Name: Audio
+  m_Name: Coletando moeda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1553,12 +1684,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487084733}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.67, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1568239777}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1568239776
 PrefabInstance:
@@ -1638,9 +1769,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 99568f48e8dd55e4eb6d98d8f1eafbde, type: 3}
       insertIndex: -1
       addedObject: {fileID: 759013173}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 99568f48e8dd55e4eb6d98d8f1eafbde, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1487084735}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 99568f48e8dd55e4eb6d98d8f1eafbde, type: 3}
       insertIndex: -1
@@ -1693,9 +1821,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b7db29db2e7b145bb18760aa91dc9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  count: 0
   countText: {fileID: 123667416}
   winTextObject: {fileID: 1184095853}
+  playerGameObject: {fileID: 5618405}
   pigDyingAudio: {fileID: 1487084734}
+  winAudio: {fileID: 702011608}
   playerSpeed: 3
 --- !u!1001 &1649674678
 PrefabInstance:
@@ -1963,6 +2094,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2942357903177264949, guid: 8155968bf02ae144fa2b9676d2b97f36, type: 3}
   m_PrefabInstance: {fileID: 2086400836}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1791195177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1791195178}
+  m_Layer: 0
+  m_Name: Victory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1791195178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791195177}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 32.56, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1817696084 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2942357903177264949, guid: 8155968bf02ae144fa2b9676d2b97f36, type: 3}
@@ -2522,11 +2684,14 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 330585546}
+  - {fileID: 1791195178}
+  - {fileID: 590553831}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 517658592}
   - {fileID: 784981833}
+  - {fileID: 1487084735}
+  - {fileID: 702011609}
   - {fileID: 1568239776}
   - {fileID: 2111927892}
-  - {fileID: 590553831}
   - {fileID: 2015855490}
