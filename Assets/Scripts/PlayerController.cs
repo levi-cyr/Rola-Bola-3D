@@ -7,13 +7,16 @@ using TMPro;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRb; //rigidbody da bola
-    private int count; //contagem dos porcos coletados
+    public int count; //contagem dos porcos coletados
     public TextMeshProUGUI countText;
     public GameObject winTextObject; //texto de vitoria
+    public GameObject playerGameObject;
     public AudioSource pigDyingAudio; //fonte do audio
+    public AudioSource winAudio;
 
     [Header("Player Settings")] //header para as configurações da bola
     public float playerSpeed = 3f; //controla a velocidade da bola
+
     void Start()
     {
         count = 0;
@@ -45,7 +48,11 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Carnes: " + count.ToString();
-        if (count >= 10) //se a contagem de pontos for maior ou igual a 6, ele ativa o texto de vitoria
+        if (count >= 10) //se a contagem de pontos for maior ou igual a 10, ele ativa o texto de vitoria
+        {
+            winAudio.Play();
             winTextObject.SetActive(true);
+            playerGameObject.SetActive(false);
+        }
     }
 }
