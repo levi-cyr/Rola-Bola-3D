@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private int count; //contagem dos porcos coletados
     public TextMeshProUGUI countText;
     public GameObject winTextObject; //texto de vitoria
-    //public AudioSource pigDyingAudio; //fonte do audio
+    public AudioSource pigDyingAudio; //fonte do audio
 
     [Header("Player Settings")] //header para as configurações da bola
     public float playerSpeed = 3f; //controla a velocidade da bola
@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             count = count + 1;
-            //pigDyingAudio.Play(); //toca o audio
+            pigDyingAudio.Play(); //toca o audio
         }
     }
 
