@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public int count; //contagem dos porcos coletados
     public TextMeshProUGUI countText;
     public GameObject winTextObject; //texto de vitoria
+    public GameObject LoseTextObject;
     public GameObject playerGameObject;
     public AudioSource pigDyingAudio; //fonte do audio
     public AudioSource winAudio;
@@ -53,6 +54,12 @@ public class PlayerController : MonoBehaviour
             winAudio.Play();
             winTextObject.SetActive(true);
             playerGameObject.SetActive(false);
+        }
+        else if(Contador.timeLevel <= 0){
+            winAudio.Play();
+            LoseTextObject.SetActive(true);
+            playerGameObject.SetActive(false);
+            Contador.stopTime = true;
         }
     }
 }
