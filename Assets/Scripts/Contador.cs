@@ -7,7 +7,7 @@ using TMPro;
 public class Contador : MonoBehaviour
 {
     public TMP_Text timeLevel_txt;
-    public static float timeLevel = 3f;
+    public static float timeLevel = 35f;
     public static bool stopTime;
     void Start()
     {
