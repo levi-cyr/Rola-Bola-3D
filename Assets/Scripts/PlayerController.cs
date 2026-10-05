@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public GameObject playerGameObject;
     public AudioSource pigDyingAudio; //fonte do audio
     public AudioSource winAudio;
+    public AudioSource loseAudio;
 
     [Header("Player Settings")] //header para as configurações da bola
     public float playerSpeed = 3f; //controla a velocidade da bola
@@ -56,7 +57,7 @@ public class PlayerController : MonoBehaviour
             playerGameObject.SetActive(false);
         }
         else if(Contador.timeLevel <= 0){
-            winAudio.Play();
+            loseAudio.Play();
             LoseTextObject.SetActive(true);
             playerGameObject.SetActive(false);
             Contador.stopTime = true;
