@@ -4,6 +4,9 @@ Jogo criado como primeiro projeto da disciplina "Programação de Jogos" - Roll 
 
 > **Orientador:** Murilo Boratto <br>
 > Jogo produzido através da Unity, publicado no Play Unity <br>
-Link do jogo: https://play.unity.com/en/games/6e6dd6ef-9fd8-4ebb-8208-8c32ca868e94/rola-bola-3d
+
+O objetivo do jogo é coletar 10 moedas em 35 segundos.
+Você controla o player com as teclas WASD ou setinhas do teclado. <br>
+[Jogue o projeto clicando aqui](https://play.unity.com/en/games/6e6dd6ef-9fd8-4ebb-8208-8c32ca868e94/rola-bola-3d)
 
 ![Thumbnail do jogo Roll a Ball.](/Thumbnail.png)
